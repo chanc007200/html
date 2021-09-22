@@ -1,1 +1,60 @@
-<!-- ...crickets... -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 8</title>
+    </head>
+    <body>
+        <h1>Registration form</h1>
+
+        <form action="/action_page.php">
+            <label for="Username">Username</label>
+            <input type="text" id="username" name="registration_form">
+            <label for="Password">password</label>
+            <input type="text" id="password" name="registration_form">
+            <label for="Email">Email</label>
+            <input type="text" id="email" name="registration_form">
+        </form>
+
+        <h2>Which taxi do you require?</h2>
+
+        <form action="/action_page.php">
+            <input type ="radio" id="Car" name="ride" value="Car">
+            <label for="car">Car</label>
+            <input type ="radio" id="Van" name="ride" value="Van">
+            <label for="van">Van</label>
+            <input type ="radio" id="Tuk Tuk" name="ride" value="TukTuk">
+            <label for="tuktuk">TukTuk</label>
+        </form>
+        
+        <h2>Choose your extras</h2>
+        
+        <form action="/action_page.php">
+            <input type ="checkbox" id="Baby seat" name="extras" value="Baby Seat">
+            <label for="Baby seat">Baby Seat</label>
+            <input type = "checkbox" id="Wheelchair access" name="extras" value="Wheelchair access">
+            <label for="Wheelchair access">Wheelchair access</label>
+            <input type = "checkbox" id="Privacy windows" name="extras" value="Privacy windows">
+            <label for="Privacy windows">Privacy windows</label>
+        </form>
+
+        <h2> Where would you like us to pick you up?</h2>
+
+        <form action="/action_page.php">
+            <label for="Pickup Locations">Pickup Locations</label>
+            <select name="Pickup Locations" id = "Pickup Locations">
+            <option value="Montreal">Montreal</option>
+            <option value="Torotno">Toronto</option>
+            <option value="Vancouver">Vancouver</option>
+            </select>
+        </form>
+
+        <h2> Additional Instructions</h2>
+        
+        <form action="/action_page.php">
+            <label for="Special">Special</label>
+            <textarea cols="25" rows ="2">provide special instructions here
+                </textarea>
+                <input type="submit"/>
+        </form>
+    </body>
+</html>
